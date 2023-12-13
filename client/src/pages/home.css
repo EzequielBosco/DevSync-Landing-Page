@@ -6,13 +6,13 @@
   width: 10%;
   height: 100%;
   background-color: var(--color);
-  text-align: center;
   padding-top: 0.5rem;
   gap: 30px;
   border-right: 1px solid rgb(0, 0, 0);
 }
 
 .right {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@ img {
   width: 90px;
 }
 
-.div-name {
+/* .div-name {
   position: relative;
   display: inline-block;
 }
@@ -59,7 +59,7 @@ img {
 }
 .vertical-text::first-letter {
   color: transparent;
-}
+} */
 
 .loader {
   display: flex;
@@ -71,7 +71,7 @@ img {
   background: black;
   border-radius: 50%;
   animation:ellipseAnimation 2s linear infinite;
-  background-image: url("../assets/Logo.png");
+  background-image: url("../assets/logo.png");
   background-size: cover;
 }
 

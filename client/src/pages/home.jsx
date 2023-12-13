@@ -1,4 +1,4 @@
-import logo from '../assets/Logo.png'
+import logo from '../assets/logo.png'
 import { ImLinkedin } from "react-icons/im";
 import { IoLogoGithub } from "react-icons/io";
 import './home.css'
@@ -8,10 +8,7 @@ const Home = () => {
     <>
       <main> 
         <div className='left'>
-          <div className='div-name'>
-            <img src={logo} alt='Logo Devsync' />
-            <h1 className='vertical-text'>DEVSYNC</h1>
-          </div>
+          <img src={logo} alt='Logo Devsync' />
           <div className='div-media'>
             <a href='https://www.linkedin.com/company/devsync-solutions/' target='_blank'>
               <ImLinkedin />
@@ -21,7 +18,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className='right'>   
+        <div className='right'>  
+          <h1>DEVSYNC SOLUTIONS</h1> 
           <div className='div-home'>
             <div className="loading">
               <span className="carga"></span>
