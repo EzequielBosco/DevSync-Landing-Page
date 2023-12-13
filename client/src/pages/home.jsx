@@ -1,4 +1,4 @@
-import logo from '../assets/Logo.png'
+import logo from '../assets/logo.png'
 import { ImLinkedin } from "react-icons/im";
 import { IoLogoGithub } from "react-icons/io";
 import './home.css'

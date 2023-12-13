@@ -71,7 +71,7 @@ img {
   background: black;
   border-radius: 50%;
   animation:ellipseAnimation 2s linear infinite;
-  background-image: url("../assets/Logo.png");
+  background-image: url("../assets/logo.png");
   background-size: cover;
 }
 
