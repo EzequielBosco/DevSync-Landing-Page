@@ -1,19 +1,78 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 10%;
+  height: 100%;
+  background-color: var(--color);
+  text-align: center;
+  padding-top: 0.5rem;
+  gap: 30px;
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+}
+
+.div-media {
+  margin-top: 14rem;
+  width: 4.8rem;
+  height: 9rem;
+  border-radius: 25px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  background-color: black;
+}
+
 .div-home {
   display: flex;
   gap: 30px;
 }
 
-#title {
-  margin-bottom: 3rem;
+img {
+  width: 90px;
+}
+
+.div-name {
+  position: relative;
+  display: inline-block;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: absolute;
+  top: 4rem;
+  left: 1em;
+  margin: 0;
+}
+.vertical-text::first-letter {
+  color: transparent;
 }
 
 .loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 48px;
   height: 48px;
-  background: #fff;
+  background: black;
   border-radius: 50%;
   animation:ellipseAnimation 2s linear infinite;
+  background-image: url("../assets/Logo.png");
+  background-size: cover;
 }
 
 @keyframes ellipseAnimation {
@@ -104,9 +163,46 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .left {
+    width: 15%;
+  }
+  .right {
+    width: 85%;
+  }
+
   .div-home {
     flex-direction: column;
     gap: 2px;
+  }
+
+  .vertical-text {
+    text-align: start;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    top: 1.5rem;
+    left: 0.45em;
+  }
+
+  .div-media {
+    width: 3.3rem;
+    height: 8rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    width: 18%;
+  }
+  .right {
+    width: 82%;
+  }
+
+  .div-media {
+    width: 3rem;
+    height: 7rem;
+    flex-direction: column;
   }
 }

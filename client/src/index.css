@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color: rgb(116, 100, 233);
+  background-color: #141414;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,36 +14,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+#root {
   display: flex;
-  place-items: center;
   justify-content: center;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
 }
 
+a {
+  color: white;
+  text-decoration: inherit;
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  color: rgb(216, 216, 216);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin-bottom: 2rem;
+  width: 100%;
 }
 
 h1 {
-  font-size: 3.2em;
+  color: white;
+  font-size: 1.8em;
   line-height: 1.1;
+  margin: 0 40px;
+}
+
+svg {
+  width: 2.5em;
+  height: 2.5em;
 }
 
 button {
@@ -74,5 +88,23 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  img {
+    width: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  svg {
+    width: 2em;
+    height: 2em;
   }
 }
